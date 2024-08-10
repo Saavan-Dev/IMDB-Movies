@@ -68,7 +68,7 @@ export function MovieDetails({
           setLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
+            `${process.env.REACT_APP_BASE_URL}?apikey=${KEY}&i=${selectedId}`
           );
 
           if (!res.ok)

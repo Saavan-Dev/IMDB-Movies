@@ -94,7 +94,7 @@ export function MovieDetails({
     function () {
       document.title = title ? `Movie | ${title}` : "Movie | Loading...";
       return function () {
-        document.title = "usePopcorn";
+        document.title = "IMDBMovies";
       };
     },
     [title]
